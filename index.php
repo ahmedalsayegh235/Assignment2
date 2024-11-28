@@ -8,19 +8,10 @@
 </head>
 <body>
 <style>
-  :root {
-    --pico-border-radius: 2rem;
-    --pico-typography-spacing-vertical: 1.5rem;
-    --pico-form-element-spacing-vertical: 1rem;
-    --pico-form-element-spacing-horizontal: 1.25rem;
-  }
   h1 {
     --pico-font-family: Pacifico, cursive;
     --pico-font-weight: 400;
     --pico-typography-spacing-vertical: 0.5rem;
-  }
-  button {
-    --pico-font-weight: 700;
   }
   table
   {
@@ -42,7 +33,9 @@
 
             // Check if the 'results' array exists and contains data
             if (isset($result["results"]) && !empty($result["results"])) {
-                echo "<table>"; ?>
+                 ?>
+                 <div class="overflow-auto">
+                <table class="striped">
                  <thead data-theme=light>
                     <?php
                     echo    "<tr>
@@ -74,13 +67,17 @@
 
                 echo "</tbody>";
                 echo "</table>";
+                
             } else {
                 echo "<p>No records found in the API response.</p>";
             }
         }
+        
         // check the format and testing
-        //var_dump($result);
+        //print_r($result);
+        //print_r($record);
         ?>
+        </div>
     </main>
 </body>
 </html>
