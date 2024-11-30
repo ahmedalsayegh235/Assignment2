@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,7 +15,8 @@
   }
   table
   {
-    border:2px solid white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
   }
 </style>
     <main class="container">
@@ -36,7 +37,7 @@
                  ?>
                  <div class="overflow-auto">
                 <table class="striped">
-                 <thead data-theme=light>
+                 <thead data-theme=dark>
                     <?php
                     echo    "<tr>
                             <th>#</th>
